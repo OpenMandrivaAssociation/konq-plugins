@@ -9,6 +9,7 @@ Url: 		http://www.kde.org
 BuildRoot: 	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires: 	kdebase4-devel
 BuildRequires:	webkitkde-devel
+Obsoletes:	kdeaddons-akregator < 1:3.5.10-2
 Obsoletes:	kdeaddons-konq-plugins < 1:3.5.10-2
 Obsoletes:	kdeaddons-konqimagegallery < 1:3.5.10-2
 Conflicts:	kde-l10n < 3.5.9-5
