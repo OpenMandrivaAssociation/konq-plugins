@@ -1,9 +1,8 @@
 Summary:	Konqueror Plugins
 Name:		konq-plugins
-Version: 	4.1.96
+Version: 	4.2.0
 Release: 	%mkrel 1
 Source0: 	http://fr2.rpmfind.net/linux/KDE/stable/%version/src/extragear/%name-%version.tar.bz2
-Patch0:		konq-plugins-4.1.96-tidy.patch
 License: 	GPLv2+
 Group: 		Graphical desktop/KDE
 Url: 		http://www.kde.org
@@ -34,7 +33,6 @@ This module contains plugins that interact with Konqueror.
 
 %prep
 %setup -q
-%patch0 -p0
 
 %build
 %cmake_kde4
