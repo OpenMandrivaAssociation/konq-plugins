@@ -7,7 +7,7 @@ License: 	GPLv2+
 Group: 		Graphical desktop/KDE
 Url: 		http://www.kde.org
 BuildRoot: 	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
-BuildRequires: 	kdebase4-devel
+BuildRequires: 	kdebase4-devel >= 1:4.2.0
 BuildRequires:	webkitkde-devel webkitkde
 BuildRequires:	tidy-devel
 Obsoletes:	kdeaddons-akregator < 1:3.5.10-2
