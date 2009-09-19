@@ -1,7 +1,7 @@
 Summary:	Konqueror Plugins
 Name:		konq-plugins
 Version: 	4.3.0
-Release: 	%mkrel 1
+Release: 	%mkrel 2
 Epoch:      1
 Source0: 	http://fr2.rpmfind.net/linux/KDE/stable/%version/src/extragear/%name-%version.tar.bz2
 License: 	GPLv2+
@@ -14,6 +14,14 @@ BuildRequires:	tidy-devel
 Obsoletes:	kdeaddons-akregator < 1:3.5.10-2
 Obsoletes:	kdeaddons-konq-plugins < 1:3.5.10-2
 Obsoletes:	kdeaddons-konqimagegallery < 1:3.5.10-2
+%if %mdkversion >= 201000
+Obsoletes:  kdeaddons-kfile-plugins < 1:3.5.10-2
+Obsoletes:  kdeaddons-kicker-applets < 1:3.5.10-2
+Obsoletes:  kdeaddons-knewsticker < 1:3.5.10-2
+Obsoletes:  kdeaddons-metabar < 1:3.5.10-2
+Obsoletes:  kdeaddons-renamedlg < 1:3.5.10-2
+Obsoletes:  kdeaddons-searchbar < 1:3.5.10-2
+%endif
 Conflicts:	kde-l10n < 3.5.9-5
 
 %description 
