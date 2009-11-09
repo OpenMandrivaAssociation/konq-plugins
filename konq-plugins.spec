@@ -1,6 +1,6 @@
 Summary:	Konqueror Plugins
 Name:		konq-plugins
-Version: 	4.3.0
+Version: 	4.3.3
 Release: 	%mkrel 2
 Epoch:      1
 Source0: 	http://fr2.rpmfind.net/linux/KDE/stable/%version/src/extragear/%name-%version.tar.bz2
