@@ -1,7 +1,7 @@
 Summary:	Konqueror Plugins
 Name:		konq-plugins
-Version: 	4.3.3
-Release: 	%mkrel 4
+Version: 	4.4.0
+Release: 	%mkrel 1
 Epoch:      1
 Source0: 	http://fr2.rpmfind.net/linux/KDE/stable/%version/src/extragear/%name-%version.tar.bz2
 License: 	GPLv2+
@@ -9,7 +9,6 @@ Group: 		Graphical desktop/KDE
 Url: 		http://www.kde.org
 BuildRoot: 	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires: 	kdebase4-devel >= 1:4.2.0
-BuildRequires:	webkitkde-devel webkitkde
 BuildRequires:	tidy-devel
 Obsoletes:	kdeaddons-akregator < 1:3.5.10-2
 Obsoletes:	kdeaddons-konq-plugins < 1:3.5.10-2
