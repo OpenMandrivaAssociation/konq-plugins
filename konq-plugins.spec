@@ -1,10 +1,9 @@
 Summary:	Konqueror Plugins
 Name:		konq-plugins
-Version: 	4.4.0
-Release: 	%mkrel 2
+Version: 	4.6.1
+Release: 	%mkrel 1
 Epoch:      1
 Source0: 	http://fr2.rpmfind.net/linux/KDE/stable/%version/src/extragear/%name-%version.tar.bz2
-Patch0:		konq-plugins-4.4.0-qt4.7.patch
 License: 	GPLv2+
 Group: 		Graphical desktop/KDE
 Url: 		http://www.kde.org
@@ -27,7 +26,7 @@ Conflicts:	kde-l10n < 3.5.9-5
 %description 
 This module contains plugins that interact with Konqueror.
 
-%files -f %name.lang
+%files
 %defattr(-,root,root)
 %_kde_bindir/*
 %_kde_libdir/kde4/*.so
@@ -42,7 +41,6 @@ This module contains plugins that interact with Konqueror.
 
 %prep
 %setup -q
-%patch0 -p0
 
 %build
 %cmake_kde4
@@ -51,8 +49,6 @@ This module contains plugins that interact with Konqueror.
 %install
 rm -rf %{buildroot}
 %{makeinstall_std} -C build
-
-%find_lang %name --with-html --all-name
 
 %clean
 rm -rf %{buildroot}
