@@ -2,7 +2,7 @@ Summary:	Konqueror Plugins
 Name:		konq-plugins
 Epoch:		1
 Version:	4.6.1
-Release:	6
+Release:	7
 License:	GPLv2+
 Group:		Graphical desktop/KDE
 Url:		http://www.kde.org
