@@ -29,6 +29,7 @@ This module contains plugins that interact with Konqueror.
 %setup -q
 
 %build
+export CXX=g++
 %cmake_kde4
 %make
 
