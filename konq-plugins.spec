@@ -7,6 +7,7 @@ License:	GPLv2+
 Group:		Graphical desktop/KDE
 Url:		https://www.kde.org
 Source0:	http://fr2.rpmfind.net/linux/KDE/stable/%version/src/extragear/%name-%version.tar.bz2
+BuildRequires:	make
 BuildRequires:	kdebase4-devel >= 1:4.2.0
 BuildRequires:	tidy-devel
 
